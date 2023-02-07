@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img, picture {
+  display: inline-block;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Make images easier to work with */
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  color: hsl(229deg, 6%, 66%);
+  background: hsl(0deg, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  min-height: max-content;
+}
+body main {
+  width: 100%;
+  padding-block: 4em 1rem;
+  padding-inline: 1.2rem;
+}
+body main header {
+  padding-block-end: 3rem;
+}
+@media (min-width: 1170PX) {
+  body main header {
+    padding-inline: 26.7rem;
+  }
+}
+body main header hgroup {
+  padding-block-end: 1rem;
+}
+body main header hgroup h1 {
+  color: inherit;
+  font-family: inherit;
+  font-size: 22.5px;
+  font-weight: 200;
+}
+body main header hgroup h2 {
+  color: hsl(234deg, 12%, 34%);
+  font-family: inherit;
+  font-size: 22.5px;
+  font-weight: 600;
+}
+body main section {
+  padding-inline: 0.68rem;
+}
+@media (min-width: 1170PX) {
+  body main section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+body main section .card {
+  text-align: start;
+  margin-block-end: 1rem;
+  padding-block: 1.6rem;
+  padding-inline: 0.9rem;
+  border-radius: 0.5rem;
+  border-top: 4px solid var(--c);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  grid-column: var(-clmn);
+  grid-row: var(--rw);
+}
+@media (min-width: 1170PX) {
+  body main section .card {
+    margin: 0;
+  }
+}
+body main section .card h2 {
+  color: hsl(234deg, 12%, 34%);
+}
+body main section .card p {
+  line-height: 1.6rem;
+}
+@media (min-width: 1170PX) {
+  body main section .card p {
+    margin: 0;
+    padding-inline-end: 4.7rem;
+  }
+}
+body main section .card img {
+  margin-block-start: 2rem;
+  margin-inline-start: auto;
+  padding-inline-end: 1rem;
+}/*# sourceMappingURL=style.min.css.map */
